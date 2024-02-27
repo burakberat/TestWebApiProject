@@ -37,7 +37,7 @@ namespace Business.Concretes
 
         public List<GetAllBrandResponse> GetAll()
         {
-            List<Brand> brands = new List<Brand>();
+            List<Brand> brands = _brandDal.GetAll();
             List<GetAllBrandResponse> getAllBrandResponses = new List<GetAllBrandResponse>();
 
             foreach (var brand in brands)
